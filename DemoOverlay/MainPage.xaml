@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DemoOverlay"
+             x:Class="DemoOverlay.MainPage">
+
+    <StackLayout>
+        <Label HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="Start">
+            The goal of this project is to have the overlay control always visible, at the bottom of the screen, and partially cover the contents of the navigation page, including during the transition from one page to the next. 
+            The transition to the child page page SHOULD NOT create a new overlay instance and the transition back SHOULD NOT create an overlay - the number of overlay instances SHOULD be one at all time.
+            The location of the overlay control should be at the bottom of the screen, and should cover the navigation page
+        </Label>
+        <Button Clicked="Button_OnClicked" Text="Next"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand" />
+
+    </StackLayout>
+
+</ContentPage>
